@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "1231216f-bd43-42fa-b020-f026612bc41d": {
+        "id": "1231216f-bd43-42fa-b020-f026612bc41d",
+        "parent": null,
+        "name": "APIDeploymentTest",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "27371844-aa9e-4823-b083-19c8721ced1c"
+        ],
+        "isRemovable": false,
+        "filePath": "APIDeploymentTest"
+      },
+      "27371844-aa9e-4823-b083-19c8721ced1c": {
+        "id": "27371844-aa9e-4823-b083-19c8721ced1c",
+        "parent": "1231216f-bd43-42fa-b020-f026612bc41d",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "APIDeploymentTest/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1DepTesthelloget",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "1231216f-bd43-42fa-b020-f026612bc41d",
+    "openFiles": [
+      "27371844-aa9e-4823-b083-19c8721ced1c"
+    ],
+    "currentFileId": "27371844-aa9e-4823-b083-19c8721ced1c",
+    "resources": {
+      "apigusEast1DepTesthelloget": {
+        "name": "apigusEast1DepTesthelloget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "DepTest",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "hello",
+          "resourcePath": "/hello",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "APIDeploymentTest",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1566364655715
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "APIDeploymentTest",
+      "url": "https://github.com/zgma-test/APIDeploymentTest"
+    }
+  }
+}
