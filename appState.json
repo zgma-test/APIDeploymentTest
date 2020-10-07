@@ -22,9 +22,8 @@
         "children": [],
         "isRemovable": true,
         "filePath": "APIDeploymentTest/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "config": {
-          "runtime": "nodejs8.10",
+          "runtime": "nodejs10.x",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
@@ -32,24 +31,26 @@
         },
         "triggers": [
           {
-            "resourceName": "apigusEast1DepTesthelloget",
+            "resourceName": "apigDepTesthelloget",
             "config": {}
           }
-        ]
+        ],
+        "lastUpdated": 1602049628160,
+        "cursor": {
+          "lineNumber": 3,
+          "column": 56
+        }
       }
     },
-    "deletedFiles": [],
-    "rootNode": "1231216f-bd43-42fa-b020-f026612bc41d",
     "openFiles": [
       "27371844-aa9e-4823-b083-19c8721ced1c"
     ],
     "currentFileId": "27371844-aa9e-4823-b083-19c8721ced1c",
     "resources": {
-      "apigusEast1DepTesthelloget": {
-        "name": "apigusEast1DepTesthelloget",
+      "apigDepTesthelloget": {
+        "name": "apigDepTesthelloget",
         "type": "API_GATEWAY",
         "config": {
-          "selectedRegion": "us-east-1",
           "apiMode": 0,
           "apiName": "DepTest",
           "endpointType": "EDGE",
@@ -67,7 +68,8 @@
     },
     "customTemplate": {
       "dialect": null,
-      "definitions": {}
+      "definitions": null,
+      "syntax": "JSON"
     },
     "envVariables": [
       {
@@ -81,16 +83,19 @@
     ],
     "packageJSON": {
       "dependencies": {}
-    }
+    },
+    "rootNode": "1231216f-bd43-42fa-b020-f026612bc41d"
   },
   "PROJECT_META": {
+    "sigmaVersion": "1.4.3.1",
     "projectName": "APIDeploymentTest",
     "projectDescription": "",
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
+    "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1566364655715
+    "lastSave": 1602049633592
   },
   "VCS_STATE": {
     "provider": "GitHub",
